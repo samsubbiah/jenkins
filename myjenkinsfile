@@ -13,7 +13,9 @@ stages{
 	stage('checkout'){
 	
 	steps{
-		sh 'git clone https://github.com/samsubbiah/jenkins.git'
+             
+
+		sh 'git clone https://github.com/samsubbiah/jenkins.git .'
 	}
 
 	}
