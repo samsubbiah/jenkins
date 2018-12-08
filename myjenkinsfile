@@ -3,13 +3,28 @@ pipeline{
 
 agent  any
 
+tools{
+
+maven "M3"
+
+} 
+
 stages{
-	stage('helloworld'){
+	stage('checkout'){
 	
 	steps{
-		sh 'echo helloworld'
+		sh 'git clone https://github.com/samsubbiah/jenkins.git'
 	}
+
 	}
+	stage('compile'){
+
+	steps{
+
+	sh "mvn clean compile"
+}
+}
+
 	
 
 
