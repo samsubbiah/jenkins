@@ -1,7 +1,7 @@
 pipeline{
 
 
-agents "master"
+agent "master"
 
 stages{
 	stage('helloworld'){
